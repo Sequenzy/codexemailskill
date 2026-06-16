@@ -3,6 +3,9 @@ const required = [
   "public/index.html",
   "public/articles/index.html",
   "public/skill/index.html",
+  "public/about/index.html",
+  "public/privacy-policy/index.html",
+  "public/terms-of-use/index.html",
   "skills/codexemailskill/SKILL.md",
   "skills/codexemailskill/agents/openai.yaml",
   "skills/codexemailskill/references/operating-checklist.md"
