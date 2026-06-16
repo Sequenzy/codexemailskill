@@ -18,6 +18,6 @@
     "name": "codexemailskill",
     "path": "skills/codexemailskill",
     "install": "npx skills add codexemailskill",
-    "githubInstall": "npx skills add polnikale/codexemailskill --skill codexemailskill"
+    "githubInstall": "npx skills add Sequenzy/codexemailskill --skill codexemailskill"
   }
 }
