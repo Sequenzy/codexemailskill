@@ -1,0 +1,13 @@
+{
+  "skills": [
+    {
+      "name": "codexemailskill",
+      "title": "Codex Email Skill",
+      "description": "Codex Email Skill: Codex-ready email implementation workflows for codebases and content systems.",
+      "install": "npx skills add codexemailskill",
+      "skill_url": "https://codexemailskill.com/skills/codexemailskill/SKILL.md",
+      "markdown_url": "https://codexemailskill.com/skill/index.md",
+      "homepage_url": "https://codexemailskill.com/"
+    }
+  ]
+}

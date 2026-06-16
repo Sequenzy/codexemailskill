@@ -1,0 +1,22 @@
+# Codex Email Skill
+
+Codex Email Skill is a skill package for Codex-ready email implementation workflows for codebases and content systems.
+
+Install:
+
+```bash
+npx skills add codexemailskill
+```
+
+## Primary agent resources
+
+- Markdown index: https://codexemailskill.com/index.md
+- Skill page: https://codexemailskill.com/skill/index.md
+- Raw SKILL.md: https://codexemailskill.com/skills/codexemailskill/SKILL.md
+- Skill discovery JSON: https://codexemailskill.com/.well-known/skills/index.json
+
+## Articles
+
+- How to Build an Agent-Ready Codex Email Strategy: https://codexemailskill.com/articles/agent-ready-email-strategy/index.md
+- The Practical Codex Email Operations Playbook for AI Agents: https://codexemailskill.com/articles/email-operations-playbook/index.md
+- Codex Email Skill Audit Checklist: From Prompt to Production: https://codexemailskill.com/articles/email-skill-audit-checklist/index.md
