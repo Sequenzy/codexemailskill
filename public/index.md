@@ -2,9 +2,9 @@
 
 codexemailskill.com
 
-Codex Email Skill for agents that work on email systems.
+Make email edits testable inside real codebases.
 
-A compact skill for Codex-ready email implementation workflows for codebases and content systems, built for Codex, Hermes, OpenClaw, Claude Code, Cowork, Goose, Cursor, Windsurf, and other skill-aware agents. It gives agents intake questions, review gates, QA checks, and handoff formats for production email work.
+A code-aware email skill for agents implementing template changes, content updates, and QA notes with diffs instead of vague recommendations.
 
 ## Install
 
@@ -12,16 +12,43 @@ A compact skill for Codex-ready email implementation workflows for codebases and
 npx skills add codexemailskill
 ```
 
-Raw skill folder: `skills/codexemailskill`
+## Operating Data
 
-## Use Cases
+- **4**: repo surfaces
+- **11**: template checks
+- **100%**: diff-first output
 
-- **Repo-aware email edits**: Give agents a bounded way to inspect inputs, propose changes, and surface approval points before anything reaches subscribers.
-- **Template implementation**: Give agents a bounded way to inspect inputs, propose changes, and surface approval points before anything reaches subscribers.
-- **Testable content changes**: Give agents a bounded way to inspect inputs, propose changes, and surface approval points before anything reaches subscribers.
+## Repo-aware workflow
 
-## Guides
+1. Find template
+2. Read variables
+3. Patch copy
+4. Run checks
+5. Summarize diff
 
-- [How to Build an Agent-Ready Codex Email Strategy](/articles/agent-ready-email-strategy/index.md)
-- [The Practical Codex Email Operations Playbook for AI Agents](/articles/email-operations-playbook/index.md)
-- [Codex Email Skill Audit Checklist: From Prompt to Production](/articles/email-skill-audit-checklist/index.md)
+## Scenarios
+
+### Repo-aware email edits
+
+Locate templates, copy files, preview fixtures, and content sources before writing.
+
+### Template implementation
+
+Convert an approved brief into scoped code or content changes.
+
+### Testable content changes
+
+Return exact files changed, checks run, and remaining risk.
+
+## Operating Proof
+
+- **Best for**: Engineering teams with email templates in source control
+- **Primary artifact**: Scoped diff plus QA checklist
+- **Stop condition**: Unknown variable schema or missing preview path
+
+## Agent Resources
+
+- Markdown index: /index.md
+- Skill discovery JSON: /.well-known/skills/index.json
+- Raw SKILL.md: /skills/codexemailskill/SKILL.md
+- Articles: /articles/
