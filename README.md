@@ -5,8 +5,8 @@ Static landing page and Codex skill for codexemailskill.com.
 Install shortcut:
 
 ```bash
-npx skills add codex-email
-npx skills add polnikale/codexemailskill --skill codex-email
+npx skills add codexemailskill
+npx skills add polnikale/codexemailskill --skill codexemailskill
 ```
 
-Raw skill folder: `skills/codex-email`
+Raw skill folder: `skills/codexemailskill`

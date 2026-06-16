@@ -1,5 +1,5 @@
 ---
-name: codex-email
+name: codexemailskill
 description: Use when Codex or another AI agent needs to plan, review, implement, audit, or improve email work focused on Codex-ready email implementation workflows for codebases and content systems. Triggers include requests about Repo-aware email edits, Template implementation, Testable content changes, email briefs, email QA, subscriber journeys, production handoffs, approval gates, and agent-safe email operations.
 ---
 

@@ -3,15 +3,15 @@ const required = [
   "public/index.html",
   "public/articles/index.html",
   "public/skill/index.html",
-  "skills/codex-email/SKILL.md",
-  "skills/codex-email/agents/openai.yaml",
-  "skills/codex-email/references/operating-checklist.md"
+  "skills/codexemailskill/SKILL.md",
+  "skills/codexemailskill/agents/openai.yaml",
+  "skills/codexemailskill/references/operating-checklist.md"
 ];
 for (const file of required) {
   if (!fs.existsSync(file)) throw new Error(`Missing ${file}`);
 }
-const skill = fs.readFileSync("skills/codex-email/SKILL.md", "utf8");
-if (!skill.startsWith("---\nname: codex-email\n")) throw new Error("Invalid skill frontmatter");
+const skill = fs.readFileSync("skills/codexemailskill/SKILL.md", "utf8");
+if (!skill.startsWith("---\nname: codexemailskill\n")) throw new Error("Invalid skill frontmatter");
 const html = fs.readFileSync("public/index.html", "utf8");
-if (!html.includes("npx skills add codex-email")) throw new Error("Missing install shortcut");
+if (!html.includes("npx skills add codexemailskill")) throw new Error("Missing install shortcut");
 console.log("codexemailskill.com ok");

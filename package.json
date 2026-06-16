@@ -1,5 +1,5 @@
 {
-  "name": "codex-email",
+  "name": "codexemailskill",
   "version": "0.1.0",
   "private": false,
   "description": "Codex Email Skill: Codex-ready email implementation workflows for codebases and content systems.",
@@ -12,12 +12,12 @@
     "codex-skill",
     "email",
     "agents",
-    "codex-email"
+    "codexemailskill"
   ],
   "skill": {
-    "name": "codex-email",
-    "path": "skills/codex-email",
-    "install": "npx skills add codex-email",
-    "githubInstall": "npx skills add polnikale/codexemailskill --skill codex-email"
+    "name": "codexemailskill",
+    "path": "skills/codexemailskill",
+    "install": "npx skills add codexemailskill",
+    "githubInstall": "npx skills add polnikale/codexemailskill --skill codexemailskill"
   }
 }
