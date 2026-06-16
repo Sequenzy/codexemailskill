@@ -6,7 +6,6 @@ Install shortcut:
 
 ```bash
 npx skills add codexemailskill
-npx skills add Sequenzy/codexemailskill --skill codexemailskill
 ```
 
 Raw skill folder: `skills/codexemailskill`
