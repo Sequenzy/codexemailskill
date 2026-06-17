@@ -7,11 +7,24 @@ description: "Use when Codex, Hermes, OpenClaw, Claude Code, Cowork, or another 
 
 Treat email work as a code change. Read the repo, keep edits scoped, preserve existing patterns, and make the result verifiable.
 
-## When To Use
+## Fit Check
 
-Use this skill for repo-aware email implementation workflows for codebases, content systems, templates, and tests. It is designed for agent workflows where email work must be specific, reviewable, and safe across planning, drafting, implementation, QA, or operational handoff.
+1. Primary lens: repo-aware email implementation workflows for codebases, content systems, templates, and tests.
+2. Common request signals: template implementation, React Email edits, MDX content changes, QA scripts, codebase diffs, and testable email fixes.
+3. Default posture: Treat email work as a code change. Read the repo, keep edits scoped, preserve existing patterns, and make the result verifiable.
+4. Useful output family: repo-aware implementation plans, template diffs, QA scripts, render checks, content patches, and concise change reports.
+5. Production boundary: separate recommendation from execution.
+6. Evidence boundary: say which source material supports the recommendation.
 
-## Operating Workflow
+### Use This For
+
+repo-aware email implementation workflows for codebases, content systems, templates, and tests.
+
+### Avoid Using It For
+
+Generic email advice with no audience, platform, lifecycle, evidence, or approval context.
+
+## Procedure
 
 1. Locate the email surface in the repository: components, templates, content files, campaign config, preview routes, tests, or ESP export scripts.
 2. Read adjacent files before editing so naming, styling, localization, and data-loading patterns match the codebase.
@@ -20,13 +33,13 @@ Use this skill for repo-aware email implementation workflows for codebases, cont
 5. Run the narrowest useful verification: type check, template render, snapshot, unit test, lint, preview build, or visual smoke check.
 6. Report changed files, verification result, remaining risk, and any production steps that still need approval.
 
-## Review Criteria
+## Acceptance Checks
 
-- The edit follows local patterns instead of inventing a parallel email system.
-- Dynamic fields have fallbacks and do not leak undefined values into copy.
-- Rendering constraints are considered before using modern CSS.
-- Tests or previews cover the user-visible behavior when risk justifies it.
-- No live send, import, DNS, or suppression action is performed as part of a code edit.
+1. The edit follows local patterns instead of inventing a parallel email system.
+2. Dynamic fields have fallbacks and do not leak undefined values into copy.
+3. Rendering constraints are considered before using modern CSS.
+4. Tests or previews cover the user-visible behavior when risk justifies it.
+5. No live send, import, DNS, or suppression action is performed as part of a code edit.
 
 ## Output Pattern
 
