@@ -1,30 +1,27 @@
 # Codex Email Skill Operating Checklist
 
-Use this checklist when the request involves Codex-ready email implementation workflows for codebases and content systems or could affect a live email system.
+Use this checklist when the request involves repo-aware email implementation workflows for codebases, content systems, templates, and tests or could affect a live email system.
 
 ## Intake
 
-- Audience and segment definition
-- Lifecycle moment or campaign purpose
-- Sending platform and source of truth
-- Existing template, copy, or automation screenshot
-- Recent delivery, engagement, unsubscribe, and complaint ranges
-- Legal or compliance constraints
-- Required approval owner
+- Repository path and branch state
+- Email template, component, MDX, or config files involved
+- Expected copy, layout, data fields, and tracking behavior
+- Existing preview, render, lint, and test commands
+- Deployment or ESP import path after the code change
 
 ## QA
 
-- Confirm the subject line matches the body promise.
-- Confirm links, personalization fields, fallbacks, and unsubscribe paths.
-- Confirm exclusions and suppression logic.
-- Confirm mobile readability and plain-language CTA.
-- Confirm the sender identity and reply handling.
-- Confirm metric baseline before recommending changes.
+- Confirm changed files are limited to the requested surface.
+- Confirm dynamic props, localization keys, and tracking params resolve correctly.
+- Confirm the rendered email does not regress mobile, dark mode, or plain-text fallbacks.
+- Confirm verification commands ran or explain why they could not run.
+- Confirm production rollout steps are separate from the code patch.
 
 ## Risk Gates
 
-Low risk: summaries, drafts, analysis, naming suggestions.
+Low risk: research, summaries, drafts, critiques, naming, and non-production recommendations.
 
-Medium risk: template edits, segment recommendations, automation diagrams, A/B test plans.
+Medium risk: template edits, segment recommendations, automation diagrams, experiments, imports prepared for review, and code changes that need deployment.
 
-High risk: sending, contact imports, DNS/authentication changes, suppression edits, production automation changes.
+High risk: live sends, contact imports, suppression edits, DNS/authentication changes, production automation changes, provider migrations, and destructive cleanup. Stop and request explicit approval before high-risk actions.
