@@ -1,0 +1,13 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Codebase Email",
+      "description": "Repo-aware email implementation, template edits, and render verification.",
+      "skills": [
+        "codexemailskill"
+      ]
+    }
+  ]
+}
